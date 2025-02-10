@@ -34,19 +34,28 @@
 			<h1> Contact Us</h1>
 		</section>
 		<aside role="complementary">
-		<form>
-			<fieldset id="contact-form">
-				<label for="client-name">Your name:</label><br>
-				<input type="text" id="client-name"><br>
-				<label for="phone">Phone</label><br>
-				<input type="text" id="phone"><br>
-				<label for="e-mail">Your email:*</label><br>
-				<input type="email" id="e-mail" required><br>
-				<label for="comment">Your message:*</label><br>
-				<textarea rows="10" id="comment" required></textarea><br>
-				<input id="submit" type="submit" value="Submit">
-			</fieldset>
-		</form>
+		<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="266aa985-005d-4cc9-bcbb-d890bc70c2a4">
+  
+				<div class="row">
+				  <div class="col-md-6 form-group">
+					<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+				  </div>
+				  <div class="col-md-6 form-group mt-3 mt-md-0">
+					<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+				  </div>
+				</div>
+				<div class="form-group mt-3">
+				  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+				</div>
+				<div class="form-group mt-3">
+				  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+				</div>
+				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  
+  
+				<div class="text-center"><button type="submit">Send Message</button></div>
+			  </form>
 		</aside>
 		<section id="address">
 			<h3>Call Hours:</h3>
